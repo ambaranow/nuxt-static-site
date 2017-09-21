@@ -1,9 +1,9 @@
 <template lang="pug">
   .VueToNuxtLogo
-    .Triangle Triangle--two
-    .Triangle Triangle--one
-    .Triangle Triangle--three
-    .Triangle Triangle--four
+    .Triangle.Triangle--two
+    .Triangle.Triangle--one
+    .Triangle.Triangle--three
+    .Triangle.Triangle--four
 </template>
 
 <style lang="scss">
@@ -21,39 +21,39 @@
     left: 0;
     width: 0;
     height: 0;
-  }
+    &--one {
+      border-left: 105px solid transparent;
+      border-right: 105px solid transparent;
+      border-bottom: 180px solid #41B883;
+    }
 
-  .Triangle--one {
-    border-left: 105px solid transparent;
-    border-right: 105px solid transparent;
-    border-bottom: 180px solid #41B883;
-  }
+    &--two {
+      top: 30px;
+      left: 35px;
+      animation: goright 0.5s linear forwards 3.5s;
+      border-left: 87.5px solid transparent;
+      border-right: 87.5px solid transparent;
+      border-bottom: 150px solid #3B8070;
+    }
 
-  .Triangle--two {
-    top: 30px;
-    left: 35px;
-    animation: goright 0.5s linear forwards 3.5s;
-    border-left: 87.5px solid transparent;
-    border-right: 87.5px solid transparent;
-    border-bottom: 150px solid #3B8070;
-  }
+    &--three {
+      top: 60px;
+      left: 35px;
+      animation: goright 0.5s linear forwards 3.5s;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 120px solid #35495E;
+    }
 
-  .Triangle--three {
-    top: 60px;
-    left: 35px;
-    animation: goright 0.5s linear forwards 3.5s;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 120px solid #35495E;
-  }
+    &--four {
+      top: 120px;
+      left: 70px;
+      animation: godown 0.5s linear forwards 3s;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-bottom: 60px solid #fff;
+    }
 
-  .Triangle--four {
-    top: 120px;
-    left: 70px;
-    animation: godown 0.5s linear forwards 3s;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 60px solid #fff;
   }
 }
 
