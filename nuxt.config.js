@@ -25,6 +25,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: true, // doesn`t work
     /*
     ** Run ESLint on save
     */
