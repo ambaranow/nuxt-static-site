@@ -1,5 +1,9 @@
 module.exports = {
   /*
+  ** root for source code
+  */
+  srcDir: 'src/',
+  /*
   ** Headers of the page
   */
   head: {
