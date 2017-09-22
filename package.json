@@ -5,13 +5,14 @@
   "author": "ambaranow <ambaranow@gmail.com>",
   "private": true,
   "scripts": {
-    "clean": "rimraf dist _nuxt",
+    "clean": "rimraf dist .nuxt",
     "dev": "npm run clean && nuxt",
     "build": "npm run clean && nuxt build",
     "start": "npm run clean && nuxt start",
     "generate": "npm run clean && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "prestart": "yarn install"
   },
   "dependencies": {
     "nuxt": "^1.0.0-rc11"
