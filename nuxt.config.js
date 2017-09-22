@@ -10,7 +10,8 @@ module.exports = {
    */
   head: {
     title: 'vue-static-site',
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -43,7 +44,7 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
-    extend (config, ctx) {
+    extend(config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
