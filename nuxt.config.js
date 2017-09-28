@@ -36,11 +36,35 @@ module.exports = {
   loading: {
     color: '#3B8070'
   },
+  generate: {
+    extractCSS: true, // doesn`t work?
+    minify: {
+      collapseBooleanAttributes: false,
+      collapseWhitespace: true,
+      decodeEntities: false,
+      keepClosingSlash: true,
+      minifyCSS: true,
+      minifyJS: true,
+      processConditionalComments: false,
+      removeAttributeQuotes: false,
+      removeComments: true,
+      removeEmptyAttributes: false,
+      removeOptionalTags: false,
+      removeRedundantAttributes: false,
+      removeScriptTypeAttributes: false,
+      removeStyleLinkTypeAttributes: false,
+      removeTagWhitespace: false,
+      sortAttributes: false,
+      sortClassName: false,
+      trimCustomFragments: false,
+      useShortDoctype: false
+    }
+  },
   /*
    ** Build configuration
    */
   build: {
-    extractCSS: true, // doesn`t work
+    extractCSS: true, // doesn`t work?
     /*
      ** Run ESLint on save
      */
